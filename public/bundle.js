@@ -1,0 +1,1 @@
+(async()=>{let a=await(await fetch("https://run.mocky.io/v3/a27db518-069d-45a3-8fac-938b5c2228d1")).json();Object.entries(a);for(let l=0;l<a.length;l++)a[l].isActive&&(a[l].sallary=1.1*a[l].sallary);a.sort(((a,l)=>l.sallary-a.sallary)),console.log(a)})();
